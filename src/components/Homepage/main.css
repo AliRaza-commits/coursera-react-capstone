@@ -1,0 +1,34 @@
+main>section:first-child {
+    background-color: #495E57;
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+}
+
+main>section:first-child>div:first-child{
+    flex: 0 0 70%;
+    text-align: left;
+}
+
+main>section:first-child>div:first-child>h1 {
+    color: #F4CE14;
+    font-size: 4rem;
+    margin: 0px;
+}
+
+main>section:first-child>div:first-child>h2 {
+    color: #EDEFEE;
+    font-size: 3rem;
+    margin: 0px;
+}
+main>section:first-child>div:first-child>p {
+    color: #FFFFFF;
+    font-size: 2rem;
+}
+
+main>section:first-child>div:first-child>button {
+    background-color: #F4CE14;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 18px;
+}
