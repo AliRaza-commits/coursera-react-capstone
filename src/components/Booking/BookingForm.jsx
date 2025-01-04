@@ -13,6 +13,7 @@ export function getFromLocalStorage(key) {
 
 export function BookingForm({ availableTimes, dispatch }) {
     const [isSubmitAllowed, setIsSubmitAllowed] = useState(false);
+    const [isValid, setIsValid] = useState(true);
     const [formData, setFormData] = useState({
         date: '',
         time: '',
@@ -25,6 +26,11 @@ export function BookingForm({ availableTimes, dispatch }) {
 
     const submitForm  = (e) => {
         e.preventDefault();
+        if (formData.date === '' || formData.time === '' || formData.guest === '' || formData.occassion === '') {
+            setIsValid(false);
+            return;
+        }
+
         const allowFormSubmit = submitAPI(formData);
         if (allowFormSubmit) {
             const value = formData.date+' '+formData.time;
@@ -48,6 +54,7 @@ export function BookingForm({ availableTimes, dispatch }) {
 
     return (
         <div>
+        {!isValid && (<p style={{ fontWeight: 'bold', textAlign: 'center',color: 'red' }}>Please Fix Below Errors</p>) }
             <form onSubmit={submitForm } style={{ display: "grid", maxWidth: "200px", gap: "20px", background: 'yellow', padding: '8px', border: '1px solid white', borderRadius: '12px', margin: 'auto' }}>
                 <label htmlFor="res-date">Choose date</label>
                 <input aria-label="date" name="date" value={formData.date} onChange={updateForm} type="date" id="res-date" />

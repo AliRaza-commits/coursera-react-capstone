@@ -20,3 +20,5 @@ Run Command:
 npm run test
 ```
 
+Test is in file called **Booking.test.js** in **src/components/Booking**
+

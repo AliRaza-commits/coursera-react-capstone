@@ -1,0 +1,93 @@
+@media(max-width: 792px) {
+    .top-banner>div {
+        width: 100% !important;
+        grid-template-columns: 1fr !important;
+        margin: auto !important;
+        row-gap: 1.5rem !important; 
+    }
+
+    header>nav>ul {
+        padding: 8px;
+        position: absolute !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        background: white !important;
+        top: 7vh !important;
+        width: 50%;
+    }
+
+    header>nav>ul>a {
+        border-bottom: 1px solid gray;
+        margin-bottom: 1rem;
+    }
+
+    
+    .navicon {
+        display: block !important;
+    }
+}
+
+.navicon {
+    display: none;
+}
+
+nav header a {
+    color: #495E57;
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.nav-bar>ul>a:hover {
+    color: #495E57;
+    font-weight: bold;
+}
+
+
+.top-banner>div>div>h1 {
+    color: #F4CE14;
+    font-family: "Markazi Text";
+    font-size: 2.5rem
+}
+
+.navicon {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+}
+
+.top-banner>div>div>h2,.top-banner>div>div>p {
+    color: white;
+    font-family: "Markazi Text";
+}
+
+.top-banner>div {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    gap: 4.5rem;
+}
+
+.table-reserve-btn {
+    background: rgb(244, 206, 20);
+    color: black;
+    text-decoration: none;
+    padding: 4px 12px;
+    border-radius: 12px;
+}
+
+header>nav>ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 8px;
+    cursor: pointer;
+}
+
+header>nav>ul>li:hover {
+    color: blue;
+}

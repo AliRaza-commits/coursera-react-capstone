@@ -1,0 +1,39 @@
+footer {
+    background-color: #495E57;
+    color: white;
+}
+
+.footer-img{
+    width: 6rem;
+}
+
+footer>.container {
+    display: grid;
+    width: 60rem;
+    margin: auto;
+    padding: 2rem;
+}
+
+footer>.container>nav>ul
+{
+    list-style: none;
+}
+
+footer>.container>nav>ul>li>a {
+color: white;
+text-decoration: none;
+}
+
+footer>.container>nav {
+    grid-column: 2;
+}
+
+@media(max-width: 792px) {
+    footer>.container>nav {
+        grid-column: 1 !important;
+    }
+
+    footer>.container {
+        width: 100%;
+    }
+}
